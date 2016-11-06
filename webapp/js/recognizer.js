@@ -41,7 +41,7 @@ function Utf8Decode(strUtf) {
             return String.fromCharCode(cc); }
     );
     return strUni;
-}
+}//js
 
 function startup(onMessage) {
     self.onmessage = function(event) {
