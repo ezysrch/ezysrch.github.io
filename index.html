@@ -150,7 +150,7 @@
         outputContainer = document.getElementById("output");
         updateStatus("Initializing web audio and speech recognizer, waiting for approval to access the microphone");
         callbackManager = new CallbackManager();
-        spawnWorker("js/recognizer.js", function(worker) {
+        spawnWorker("webapp/js/recognizer.js", function(worker) {
             // This is the onmessage function, once the worker is fully loaded
             worker.onmessage = function(e) {
                 // This is the case when we have a callback id to be called
