@@ -103,7 +103,7 @@
       // This updates the UI when the app might get ready
       // Only when both recorder and recognizer are ready do we enable the buttons
       function updateUI() {
-        if (isRecorderReady && isRecognizerReady) startBtn.disabled = stopBtn.disabled = false;
+        if (isRecorderReady && isRecognizerReady) startBtn.disabled = stopBtn.disabled = false;//use to disable buttons
       };
 
       // This is just a logging window where we display the status
@@ -194,7 +194,7 @@
                                         if (recorder) recorder.consumers = [recognizer];
                                         feedWords(wordList);});
       };
-
+		startRecording();
       // When the page is loaded, we spawn a new recognizer worker and call getUserMedia to
       // request access to the microphone
       window.onload = function() {
