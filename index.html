@@ -103,7 +103,7 @@
       // This updates the UI when the app might get ready
       // Only when both recorder and recognizer are ready do we enable the buttons
       function updateUI() {
-        if (isRecorderReady && isRecognizerReady) startBtn.disabled = stopBtn.disabled = false;
+        if (isRecorderReady && isRecognizerReady) startBtn.disabled = true, stopBtn.disabled = false;
       };
 
       // This is just a logging window where we display the status
