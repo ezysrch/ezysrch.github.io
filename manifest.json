@@ -1,0 +1,21 @@
+{
+	"name": "E-Z Search",
+	"version": "1.1",
+	"manifest_version": 2,
+	"description": "E-Z Search makes search easy!",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Click me to search!",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+    "notifications"
+  ],
+	"web_accessible_resources": [
+    "icon.png"
+  ],
+	"content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+	"icons": {
+		"128": "icon.png"
+	}
+}
